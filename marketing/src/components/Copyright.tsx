@@ -1,5 +1,5 @@
+import React from "react";
 import { Typography } from "@material-ui/core";
-import { ReactNode } from "react";
 import Link from "@material-ui/core/Link";
 
 const Copyright = (): any => {
