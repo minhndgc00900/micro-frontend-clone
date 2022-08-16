@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 
 // Mount function to start up the app
-const mount = (el: any) => {
+const Mount = (el: any) => {
   ReactDOM.render(<App />, el);
 };
 
@@ -13,10 +13,10 @@ if (process.env.NODE_ENV === "development") {
   const devRoot = document.querySelector("#_marketing-dev-root");
 
   if (devRoot) {
-    mount(devRoot);
+    Mount(devRoot);
   }
 }
 
 // We are running through container
 // and we should export the mount function
-export { mount };
+export default Mount;
